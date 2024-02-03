@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/scss/bootstrap';
+@import './node_modules/bootstrap/scss/_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+:root {
+	--bs-link-color: #fff;
+}
+
+html,
+body {
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	box-sizing: content-box;
+	font-family: 'Comfortaa', sans-serif;
+	background-color: #2e3440;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav-pills {
+	--bs-nav-pills-link-active-color: #fff;
+	--bs-nav-pills-link-active-bg: #4d5157d0;
+}

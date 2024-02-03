@@ -1,0 +1,23 @@
+#social {
+	flex-direction: column;
+}
+
+.social-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+@media (max-width: 600px) {
+
+	#links{
+		flex-wrap: wrap;
+	}
+	img{
+		width: 4rem;
+	}
+	span{
+		font-size: small;
+	}
+}

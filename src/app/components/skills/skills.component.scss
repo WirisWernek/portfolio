@@ -1,0 +1,26 @@
+#skill {
+	flex-direction: column;
+}
+
+#skills{
+	flex-wrap: wrap !important;
+}
+
+.skill-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+@media (max-width: 600px) {
+	#skills{
+		flex-wrap: wrap;
+	}
+	img{
+		width: 4rem;
+	}
+	span{
+		display: none;
+	}
+}

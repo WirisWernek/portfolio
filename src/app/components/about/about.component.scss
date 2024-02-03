@@ -1,0 +1,24 @@
+img {
+	animation: floatAnimation 5s infinite ease-out;
+}
+@keyframes floatAnimation {
+	50% {
+		transform: translateY(-10%);
+	}
+}
+@media (max-width: 600px) {
+	#about {
+		flex-direction: column-reverse;
+		gap: 2rem !important;
+	}
+	#description {
+		width: 90% !important;
+		text-align: center;
+		p {
+			text-align: justify;
+		}
+	}
+	img {
+		width: 15rem;
+	}
+}
