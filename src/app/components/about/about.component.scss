@@ -1,12 +1,12 @@
-img {
-	animation: floatAnimation 5s infinite ease-out;
-}
+// img {
+// 	animation: floatAnimation 5s infinite ease-out;
+// }
 @keyframes floatAnimation {
 	50% {
 		transform: translateY(-10%);
 	}
 }
-@media (max-width: 600px) {
+@media (max-width: 990px) {
 	#about {
 		flex-direction: column-reverse;
 		gap: 2rem !important;

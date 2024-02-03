@@ -1,5 +1,6 @@
 #skill {
 	flex-direction: column;
+	max-width: 70%;
 }
 
 #skills{
@@ -14,9 +15,6 @@
 }
 
 @media (max-width: 600px) {
-	#skills{
-		flex-wrap: wrap;
-	}
 	img{
 		width: 4rem;
 	}

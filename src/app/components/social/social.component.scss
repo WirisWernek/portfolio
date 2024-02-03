@@ -1,5 +1,10 @@
 #social {
 	flex-direction: column;
+	max-width: 70%;
+}
+
+#links{
+	flex-wrap: wrap !important;
 }
 
 .social-button {
@@ -10,14 +15,10 @@
 }
 
 @media (max-width: 600px) {
-
-	#links{
-		flex-wrap: wrap;
-	}
 	img{
 		width: 4rem;
 	}
 	span{
-		font-size: small;
+		display: none;
 	}
 }

@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SocialComponent } from './components/social/social.component';
-import { DefaultComponent } from './views/default/default.component';
+import { HomeComponent } from './views/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DefaultComponent,
+    HomeComponent,
     NavbarComponent,
     AboutComponent,
     SkillsComponent,
@@ -25,6 +25,7 @@ import { DefaultComponent } from './views/default/default.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
+	NgbTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

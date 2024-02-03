@@ -1,9 +1,9 @@
 <div id="skill" class="d-flex justify-content-center align-items-center gap-5">
 	<h4>Conhecimentos</h4>
 	<div id="skills" class="d-flex justify-content-center align-items-center gap-5">
-		<a *ngFor="let skill of skills$ | async" class="skill-item" href="https://www.instagram.com/wiriswernek/" target="_blank">
+		<div *ngFor="let skill of skills$ | async" class="skill-item" placement="bottom" [ngbTooltip]="skill.nome" >
 			<img width="50rem" [src]="skill.url" loading="eager" [alt]="skill.alt" />
 			<span class="">{{skill.nome}}</span>
-		</a>
+		</div>
 	</div>
 </div>

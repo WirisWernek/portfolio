@@ -10,7 +10,9 @@ import { SkillsService } from 'src/app/services/skills.service';
 })
 export class SkillsComponent implements OnInit {
 	skills$!: Observable<TecnologieModel[]>;
+	
 	constructor(private skillsService: SkillsService) {}
+
 	ngOnInit(): void {
 		this.skills$ = this.skillsService.getSkills();
 	}

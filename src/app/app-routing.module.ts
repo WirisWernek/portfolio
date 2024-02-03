@@ -1,20 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DefaultComponent } from './views/default/default.component';
+import { HomeComponent } from './views/home/home.component';
 
 const routes: Routes = [{
-	path: 'home',
-	component: DefaultComponent
+	path: '',
+	component: HomeComponent
 },
 {
 	path: '**',
 	pathMatch: 'full',
-	redirectTo: 'home'
+	redirectTo: '/'
 }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{
+	onSameUrlNavigation: 'reload',
+	anchorScrolling: 'enabled',
+	enableTracing: false
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
