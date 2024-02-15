@@ -1,3 +1,13 @@
+span{
+	margin-top: .6rem;
+	font-size: .8rem;
+	display: none;
+}
+
+a{
+	color: aliceblue;
+}
+
 #social {
 	flex-direction: column;
 	max-width: 70%;
@@ -17,8 +27,12 @@
 @media (max-width: 600px) {
 	img{
 		width: 4rem;
+		margin-bottom: 1rem;
 	}
 	span{
-		display: none;
+		display: block;
+	}
+	#social{
+		max-width: 80% !important;
 	}
 }

@@ -1,12 +1,14 @@
-header{
-	background-color: #262b35;
-}
-
 @media (max-width: 990px) {
-	ul{
+	ul {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
+}
+
+button,
+button:focus {
+	border: none;
+	box-shadow: none;
 }

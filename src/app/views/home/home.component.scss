@@ -1,7 +1,26 @@
-app-about, app-skills, app-social{
+app-about, app-skills, app-social, app-experiences, app-projects{
 	width: 80%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: azure;
+}
+app-about{
+	margin-top: 3rem;
+}
+
+.default-view{
+	gap: 10rem !important;
+}
+@media (max-width: 600px) {
+	app-experiences{
+		width: 100% !important;
+	}
+	app-about{
+		margin-bottom: 4rem;
+	}
+
+	.default-view{
+		gap: 8rem !important;
+	}
 }

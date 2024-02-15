@@ -1,0 +1,20 @@
+#project {
+	flex-direction: column;
+	max-width: 70%;
+}
+
+#projects{
+	flex-wrap: wrap !important;
+}
+
+.card{
+	border: none;
+	background-color: transparent;
+	color: aliceblue;
+}
+
+@media (max-width: 700px) {
+	.card{
+		width: 100% !important;
+	}
+}

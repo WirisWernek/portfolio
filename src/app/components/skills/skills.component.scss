@@ -1,6 +1,11 @@
+span{
+	margin-top: 1rem;
+	font-size: .8rem;
+	display: none;
+}
 #skill {
 	flex-direction: column;
-	max-width: 70%;
+	max-width: 60%;
 }
 
 #skills{
@@ -17,8 +22,13 @@
 @media (max-width: 600px) {
 	img{
 		width: 4rem;
+		margin-bottom: 0.1rem;
 	}
 	span{
-		display: none;
+		display: block;
+	}
+	#skill {
+		flex-direction: column;
+		max-width: 80% !important;
 	}
 }

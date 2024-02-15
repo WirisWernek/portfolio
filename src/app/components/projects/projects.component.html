@@ -1,0 +1,12 @@
+<div id="project" class="d-flex flex-column justify-content-center align-items-center gap-5">
+	<h1>Projetos</h1>
+	<div id="projects" class="d-flex row justify-content-center align-items-center gap-5">
+		<div *ngFor="let project of projects$ | async" class="col-4 card h-100">
+			<img [src]="project.imagem" class="card-img-top" alt="..." />
+			<div class="card-body">
+				<h5 class="card-title text-center">{{ project.nome }}</h5>
+				<p class="card-text">{{ project.descricao }}</p>
+			</div>
+		</div>
+	</div>
+</div>

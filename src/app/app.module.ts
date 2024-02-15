@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SocialComponent } from './components/social/social.component';
 import { HomeComponent } from './views/home/home.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HomeComponent } from './views/home/home.component';
     SkillsComponent,
     SocialComponent,
     ExperiencesComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

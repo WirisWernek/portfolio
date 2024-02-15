@@ -1,7 +1,6 @@
 ul.timeline {
     list-style-type: none;
     position: relative;
-	// padding-top: 2rem;
 	color: #d4d9df;
 }
 ul.timeline:before {
@@ -15,7 +14,6 @@ ul.timeline:before {
     z-index: 400;
 }
 ul.timeline > li {
-	// padding-bottom: 2rem;
     padding-left: 20px;
 }
 ul.timeline > li:before {
@@ -35,10 +33,11 @@ ul.timeline > li:before {
 	width: 90%;
 }
 
+div.d-flex{
+	padding-left: 0 !important;
+}
+
 @media (min-width: 768px){
-	.col-md-6{
-		width: 70%;
-	}
 	.timeline{
 		width: 70%;
 	}

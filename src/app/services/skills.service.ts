@@ -23,6 +23,9 @@ export class SkillsService {
 		list.push({ nome: 'Java', url: `${this.base_path}/java.svg`, alt: 'Logo do Java' });
 		list.push({ nome: 'Angular', url: `${this.base_path}/angular.svg`, alt: 'Logo do Angular' });
 		list.push({ nome: 'Typescript', url: `${this.base_path}/typescript.svg`, alt: 'Logo do Typescript' });
+		list.push({ nome: 'Javascript', url: `${this.base_path}/javascript.svg`, alt: 'Logo do Javascript' });
+		list.push({ nome: 'HTML', url: `${this.base_path}/html.svg`, alt: 'Logo do HTML' });
+		list.push({ nome: 'CSS', url: `${this.base_path}/css.svg`, alt: 'Logo do CSS' });
 		list.push({ nome: 'Bootstrap', url: `${this.base_path}/bootstrap.svg`, alt: 'Logo do Bootstrap' });
 		list.push({ nome: 'Tailwind CSS', url: `${this.base_path}/tailwind.svg`, alt: 'Logo do Tailwind CSS' });
 		list.push({ nome: 'Nodejs', url: `${this.base_path}/node.svg`, alt: 'Logo do Nodejs' });
@@ -31,6 +34,8 @@ export class SkillsService {
 		list.push({ nome: 'RabbitMQ', url: `${this.base_path}/rabbitmq.svg`, alt: 'Logo do RabbitMQ' });
 		list.push({ nome: 'Git', url: `${this.base_path}/git.svg`, alt: 'Logo do Git' });
 		list.push({ nome: 'Docker', url: `${this.base_path}/docker.svg`, alt: 'Logo do Docker' });
+		list.push({ nome: 'PHP', url: `${this.base_path}/php.svg`, alt: 'Logo do PHP' });
+		list.push({ nome: 'Vagrant', url: `${this.base_path}/vagrant.svg`, alt: 'Logo do Vagrant' });
 		return list;
 		// list.push({ nome: '', url: `${this.base_path}`, alt: '' });
 	}
