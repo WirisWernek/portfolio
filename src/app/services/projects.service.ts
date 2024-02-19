@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { ProjectModel } from '../models/project.model';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ProjectsService {
 
 	projects$: BehaviorSubject<ProjectModel[]>;

@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { TecnologieModel } from '../models/tecnologie.model';
 
-@Injectable({
-	providedIn: 'root',
-})
+@Injectable()
 export class SkillsService {
 	skills$: BehaviorSubject<TecnologieModel[]>;
 	base_path: string ='/assets/icons/skills';

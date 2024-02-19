@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { SocialLinkModel } from '../models/social-link.model';
 
-@Injectable({
-	providedIn: 'root',
-})
+@Injectable()
 export class SocialLinksService {
 	socialLinks$: BehaviorSubject<SocialLinkModel[]>;
 	base_path: string = '/assets/icons/social';
