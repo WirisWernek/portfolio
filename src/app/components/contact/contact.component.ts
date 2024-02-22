@@ -22,6 +22,7 @@ export class ContactComponent {
 			],
 		});
 	}
+	
 	enviarEmail() {
 		let email: EmailModel = {
 			collection: 'emails',
@@ -36,6 +37,18 @@ export class ContactComponent {
 			},
 		};
 		this.emailService.enviar(email);
+		this.limparCampos();
 	}
-	limparCampos() {}
+
+	limparCampos() {
+		this.emailForm = this.formBuilder.group({
+			nome: ['', Validators.required],
+			assunto: ['', Validators.required],
+			mensagem: ['', Validators.required],
+			email: [
+				'',
+				[Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')],
+			],
+		});
+	}
 }

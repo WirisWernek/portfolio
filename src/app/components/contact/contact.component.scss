@@ -4,6 +4,7 @@ label {
 	color: #ffffff !important;
 }
 
+
 input,
 textarea {
 	font-size: small;
@@ -13,7 +14,7 @@ textarea {
 	background-color: transparent;
 }
 
-.form-floating > label {
+.form-floating > label, .form-floating > input {
 	padding: 1rem;
 }
 

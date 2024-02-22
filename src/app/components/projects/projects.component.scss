@@ -1,10 +1,10 @@
 #project {
 	flex-direction: column;
-	max-width: 70%;
+	// max-width: 70%;
 }
 
-#projects{
-	flex-wrap: wrap !important;
+img{
+	width: 50rem;
 }
 
 .card{
@@ -14,7 +14,13 @@
 }
 
 @media (max-width: 700px) {
+	.carousel-indicators{
+		display: none !important;
+	}
 	.card{
-		width: 100% !important;
+		// width: 100% !important;
+	}
+	img{
+		width: 25rem;
 	}
 }
