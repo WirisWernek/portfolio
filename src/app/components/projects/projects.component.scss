@@ -1,6 +1,5 @@
 #project {
 	flex-direction: column;
-	// max-width: 70%;
 }
 
 img{
@@ -17,8 +16,10 @@ img{
 	.carousel-indicators{
 		display: none !important;
 	}
+	.carousel-caption{
+		bottom: .6rem;
+	}
 	.card{
-		// width: 100% !important;
 	}
 	img{
 		width: 25rem;

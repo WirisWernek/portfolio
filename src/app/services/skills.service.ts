@@ -34,6 +34,7 @@ export class SkillsService {
 		list.push({ nome: 'Docker', url: `${this.base_path}/docker.svg`, alt: 'Logo do Docker' });
 		list.push({ nome: 'PHP', url: `${this.base_path}/php.svg`, alt: 'Logo do PHP' });
 		list.push({ nome: 'Vagrant', url: `${this.base_path}/vagrant.svg`, alt: 'Logo do Vagrant' });
+		list.push({ nome: 'Figma', url: `${this.base_path}/figma.svg`, alt: 'Logo do Figma' });
 		return list;
 		// list.push({ nome: '', url: `${this.base_path}`, alt: '' });
 	}
