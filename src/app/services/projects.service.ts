@@ -59,6 +59,20 @@ export class ProjectsService {
 			alt: 'Preview do Pede Aí',
 			descricao: 'Bora pedir um açaí? pede aí',
 		});
+		list.push({
+			nome: 'Página de Contato',
+			url: 'https://pedeai-wiriswernek.vercel.app',
+			imagem: `${this.base_path}/contact_page.png`,
+			alt: 'Preview da Página de Contato',
+			descricao: 'Uma página seus cliente te contactarem.',
+		});
+		list.push({
+			nome: 'QR Code Generator',
+			url: 'https://pedeai-wiriswernek.vercel.app',
+			imagem: `${this.base_path}/qrcode_generator.png`,
+			alt: 'Preview do QR Code Generator',
+			descricao: 'Gere e compartilhe QR Codes rapidamente.',
+		});
 
 		return list;
 		// list.push({ nome: '', url: `${this.base_path}`, alt: '' });
