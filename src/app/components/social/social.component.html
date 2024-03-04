@@ -1,11 +1,19 @@
 <div id="social" class="d-flex justify-content-center align-items-center gap-5">
 	<h1>Redes Sociais</h1>
 	<div id="links" class="d-flex justify-content-center align-items-center gap-5">
-		<a *ngFor="let socialLink of socialLinks$ | async" class="social-button" [href]="socialLink.url" target="_blank" placement="bottom" [ngbTooltip]="socialLink.nome">
+		@for (socialLink of socialLinks$ | async; track $index) {
+		<a
+			class="social-button"
+			[href]="socialLink.url"
+			target="_blank"
+			placement="bottom"
+			[ngbTooltip]="socialLink.nome"
+		>
 			<div class="rounded-circle pt-3 px-3">
 				<img width="60rem" [src]="socialLink.icon" loading="eager" [alt]="socialLink.alt" />
 			</div>
-			<span class="">{{socialLink.nome}}</span>
+			<span class="">{{ socialLink.nome }}</span>
 		</a>
+		}
 	</div>
 </div>
