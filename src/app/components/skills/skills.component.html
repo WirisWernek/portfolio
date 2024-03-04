@@ -1,11 +1,13 @@
 <div id="skill" class="d-flex justify-content-center align-items-center gap-5">
 	<h1>Conhecimentos</h1>
 	<div id="skills" class="d-flex justify-content-center align-items-center gap-5">
-		<div *ngFor="let skill of skills$ | async" class="skill-item" placement="bottom" [ngbTooltip]="skill.nome" >
+		@for (skill of skills$ | async; track $index) {
+		<div class="skill-item" placement="bottom" [ngbTooltip]="skill.nome">
 			<div class="rounded-circle pt-3 px-3">
 				<img width="60rem" [src]="skill.url" loading="eager" [alt]="skill.alt" />
 			</div>
-			<span class="">{{skill.nome}}</span>
+			<span class="">{{ skill.nome }}</span>
 		</div>
+		}
 	</div>
 </div>
