@@ -73,6 +73,27 @@ export class ProjectsService {
 			alt: 'Preview do QR Code Generator',
 			descricao: 'Gere e compartilhe QR Codes rapidamente.',
 		});
+		list.push({
+			nome: 'Blog - Desafio Codelândia',
+			url: 'https://pedeai-wiriswernek.vercel.app',
+			imagem: `${this.base_path}/blog-codelandia.png`,
+			alt: 'Preview do QR Code Generator',
+			descricao: 'Quem sabe o primeiro passo de um futuro blog?',
+		});
+		list.push({
+			nome: 'Tela de Login - Desafio Codelândia',
+			url: 'https://pedeai-wiriswernek.vercel.app',
+			imagem: `${this.base_path}/tela-login-codelandia.png`,
+			alt: 'Preview da Tela de Login',
+			descricao: 'Uma tela de login moderna e responsiva.',
+		});
+		list.push({
+			nome: 'Portfolio',
+			url: 'https://portfolio-wiriswernek.vercel.app',
+			imagem: `${this.base_path}/portfolio.png`,
+			alt: 'Preview do Portifolio',
+			descricao: 'Este projeto.',
+		});
 
 		return list;
 		// list.push({ nome: '', url: `${this.base_path}`, alt: '' });
