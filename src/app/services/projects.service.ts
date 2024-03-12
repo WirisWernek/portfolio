@@ -61,28 +61,35 @@ export class ProjectsService {
 		});
 		list.push({
 			nome: 'Página de Contato',
-			url: 'https://pedeai-wiriswernek.vercel.app',
+			url: 'https://contact-page-wiriswernek.vercel.app/',
 			imagem: `${this.base_path}/contact_page.png`,
 			alt: 'Preview da Página de Contato',
 			descricao: 'Uma página seus cliente te contactarem.',
 		});
 		list.push({
 			nome: 'QR Code Generator',
-			url: 'https://pedeai-wiriswernek.vercel.app',
+			url: 'https://qr-code-generator-wiriswernek.vercel.app/',
 			imagem: `${this.base_path}/qrcode_generator.png`,
 			alt: 'Preview do QR Code Generator',
 			descricao: 'Gere e compartilhe QR Codes rapidamente.',
 		});
 		list.push({
+			nome: 'Logmine - Desafio Codelândia',
+			url: 'https://github.com/WirisWernek/logmine',
+			imagem: `${this.base_path}/logmine.png`,
+			alt: 'Preview do Logmine',
+			descricao: 'Seus logins um pouco mais quadrados.',
+		});
+		list.push({
 			nome: 'Blog - Desafio Codelândia',
-			url: 'https://pedeai-wiriswernek.vercel.app',
+			url: 'https://github.com/WirisWernek/blog',
 			imagem: `${this.base_path}/blog-codelandia.png`,
-			alt: 'Preview do QR Code Generator',
+			alt: 'Preview do Blog',
 			descricao: 'Quem sabe o primeiro passo de um futuro blog?',
 		});
 		list.push({
 			nome: 'Tela de Login - Desafio Codelândia',
-			url: 'https://pedeai-wiriswernek.vercel.app',
+			url: 'https://github.com/WirisWernek/tela-de-login',
 			imagem: `${this.base_path}/tela-login-codelandia.png`,
 			alt: 'Preview da Tela de Login',
 			descricao: 'Uma tela de login moderna e responsiva.',
@@ -91,7 +98,7 @@ export class ProjectsService {
 			nome: 'Portfolio',
 			url: 'https://portfolio-wiriswernek.vercel.app',
 			imagem: `${this.base_path}/portfolio.png`,
-			alt: 'Preview do Portifolio',
+			alt: 'Preview do Portfolio',
 			descricao: 'Este projeto.',
 		});
 
