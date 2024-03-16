@@ -95,6 +95,13 @@ export class ProjectsService {
 			descricao: 'Uma tela de login moderna e responsiva.',
 		});
 		list.push({
+			nome: 'ToDo',
+			url: 'https://github.com/WirisWernek/ToDo',
+			imagem: `${this.base_path}/todo.png`,
+			alt: 'Preview do ToDo',
+			descricao: 'Gerenciador de tarefas.',
+		});
+		list.push({
 			nome: 'Portfolio',
 			url: 'https://portfolio-wiriswernek.vercel.app',
 			imagem: `${this.base_path}/portfolio.png`,
