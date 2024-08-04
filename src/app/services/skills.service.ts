@@ -5,7 +5,7 @@ import { TecnologieModel } from '../models/tecnologie.model';
 @Injectable()
 export class SkillsService {
 	skills$: BehaviorSubject<TecnologieModel[]>;
-	base_path: string ='/assets/icons/skills';
+	base_path: string ='assets/icons/skills';
 
 	constructor() {
 		this.skills$ = new BehaviorSubject(this._getList());

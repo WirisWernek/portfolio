@@ -5,7 +5,7 @@ import { SocialLinkModel } from '../models/social-link.model';
 @Injectable()
 export class SocialLinksService {
 	socialLinks$: BehaviorSubject<SocialLinkModel[]>;
-	base_path: string = '/assets/icons/social';
+	base_path: string = 'assets/icons/social';
 
 	constructor() {
 		this.socialLinks$ = new BehaviorSubject(this._getList());

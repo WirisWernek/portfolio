@@ -5,7 +5,7 @@ import { ProjectModel } from '../models/project.model';
 @Injectable()
 export class ProjectsService {
 	projects$: BehaviorSubject<ProjectModel[]>;
-	base_path: string = '/assets/images/projects';
+	base_path: string = 'assets/images/projects';
 
 	constructor() {
 		this.projects$ = new BehaviorSubject(this._getList());
