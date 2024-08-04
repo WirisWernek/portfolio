@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmailModel } from 'src/app/models/email.model';
 import { EmailService } from 'src/app/services/email.service';
 
 @Component({
-	selector: 'app-contact',
-	templateUrl: './contact.component.html',
-	styleUrls: ['./contact.component.scss'],
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.scss'],
+    standalone: true,
+    imports: [FormsModule, ReactiveFormsModule],
 })
 export class ContactComponent {
 	emailForm!: FormGroup;
